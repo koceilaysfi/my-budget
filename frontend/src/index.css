@@ -1,68 +1,36 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* Background Colors */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --bg-primary: #0a1a0f; /* Main background */
+  --bg-card: #122619; /* Cards & containers */
+  --bg-hover: #1b3324; /* Hover surfaces (tables, secondary buttons) */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  /* Brand / Accent Colors */
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+  --accent-neon: #00ff66; /* Neon green (CTA buttons, success icons, logo) */
+  --accent-emerald: #10b981; /* Emerald green (positive revenues, indicators) */
+  --accent-red: #ef4444; /* Alert red (expenses, negative amounts, error messages) */
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  /* Text & Border Colors */
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+  --text-title: #ffffff; /* Titles */
+  --text-body: #a1a1aa; /* Body text */
+  --border-color: #1e293b; /* Borders (subtle, lightweight) */
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+  /* Typography (Font Family & Weights) */
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  --font-family: "Inter", "Plus Jakarta Sans", sans-serif;
+  --font-weight-extra-bold: 800; /* Main titles, large balance numbers */
+  --font-weight-bold: 700; /* Secondary titles */
+  --font-weight-semi-bold: 600; /* Section titles, buttons */
+  --font-weight-medium: 500; /* Labels, column headers */
+  --font-weight-regular: 400; /* Regular text / descriptions */
+
+  /* Visual Effects */
+
+  --border-radius-card: 12px; /* Card border radius */
+  --border-radius-btn: 8px; /* Button border radius */
+  --glow-effect: drop-shadow(
+    0px 0px 15px var(--accent-neon)
+  ); /* Glow for primary buttons */
 }
