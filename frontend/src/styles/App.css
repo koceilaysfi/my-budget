@@ -1,0 +1,275 @@
+@import url("./index.css");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 4rem;
+  min-height: calc(100vh - 66.4px - 54px);
+  position: relative;
+  top: 66.4px;
+}
+
+/*Logo CSS*/
+.logo-container {
+  position: relative;
+  display: flex;
+  user-select: none;
+  align-items: center;
+}
+.logo {
+  width: 32px;
+}
+.text-logo {
+  color: var(--text-white);
+  font-weight: 800;
+  font-size: 1.5rem;
+  gap: 0.5rem;
+}
+.hidden-link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+/*Link and Btn CSS*/
+.btn {
+  width: 100%;
+}
+.link {
+  min-width: 8rem;
+}
+.btn,
+.link {
+  display: inline-block;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 12px 14px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 15px;
+  outline: 0;
+  border: 0;
+}
+.primary-btn,
+.primary-link {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  box-shadow: 0 10px 30px rgba(19, 236, 91, 0.25);
+}
+.primary-btn:hover,
+.primary-link:hover {
+  filter: brightness(1.1);
+}
+.secondary-btn,
+.secondary-link {
+  background-color: var(--bg-color);
+  color: var(--text-white);
+}
+
+/*Header CSS*/
+.header {
+  z-index: 1000;
+  background-color: var(--bg-color);
+  width: 100%;
+  padding: 0.7rem 1.4rem;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px var(--border-color) solid;
+}
+.header .nav-bar {
+  display: flex;
+  gap: 0.6rem;
+}
+/*Menu CSS*/
+.menu {
+  position: relative;
+  display: none;
+}
+.menu span {
+  color: white;
+  cursor: pointer;
+}
+.menu > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  padding: 1rem;
+  min-width: 225px;
+  background-color: var(--bg-panel);
+  border-radius: 15px;
+}
+.menu svg {
+  font-size: 1.5rem;
+}
+/*Input CSS*/
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+.input-container label {
+  color: var(--text-white);
+}
+.input-container input {
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-color);
+  color: var(--text-white);
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.input-container input::placeholder {
+  color: var(--text-muted);
+}
+.input-container svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  position: absolute;
+  right: 10px;
+}
+
+.input-container:has(.error-msg) input {
+  border-color: var(--danger-color) !important;
+}
+
+/*Form CSS*/
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--bg-panel);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  gap: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+.form .btn {
+  margin: 0.5rem 0;
+}
+.error-msg {
+  font-size: 1rem;
+  color: var(--danger-color);
+}
+.server-msg {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.success-msg {
+  color: var(--primary-color);
+}
+.form .redirect {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.3rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  justify-content: center;
+}
+.form .redirect .link {
+  padding: 0;
+  min-width: 0;
+  color: var(--primary-color);
+}
+/*Footer CSS*/
+footer {
+  position: relative;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  padding: 0.8rem 0;
+  top: 66.4px;
+}
+footer p {
+  color: var(--text-muted);
+}
+
+/*Spinner CSS*/
+.spinner {
+  border-radius: 50%;
+  margin: auto;
+  border: solid 4px transparent;
+  animation: spin 1s linear infinite;
+}
+.primary-spinner {
+  border-top-color: var(--primary-color);
+}
+.secondary-spinner {
+  border-top-color: var(--bg-color);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Landing Page CSS*/
+.landing-main {
+  text-align: center;
+  gap: 1.3rem;
+}
+.landing-main h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--text-white);
+}
+.landing-main span {
+  color: var(--primary-color);
+}
+.landing-main p {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+}
+
+/*Signup Page CSS*/
+.signup-main,
+.login-main {
+  gap: 0.5rem;
+}
+.signup-main h1,
+.login-main h1 {
+  color: var(--text-white);
+  text-align: center;
+}
+.signup-main > p,
+.login-main > p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/*Login Page CSS*/
+.login-main {
+  justify-content: start;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 1rem 2rem;
+  }
+  .landing-main h1 {
+    font-size: 2.5rem;
+  }
+  .landing-main p {
+    font-size: 1rem;
+  }
+  .menu {
+    display: block;
+  }
+  .header .nav-bar {
+    display: none;
+  }
+  .form {
+    padding: 0.5rem;
+  }
+}

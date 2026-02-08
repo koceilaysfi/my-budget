@@ -1,0 +1,37 @@
+:root {
+  --bg-color: #102216;
+  --primary-color: #13ec5b;
+  --white-color: #f6f8f6;
+  --bg-card: #193322;
+  --bg-input: #112217;
+  --border-color: #326744;
+  --text-white: #f6f8f6;
+  --danger-color: #f87171;
+  --bg-panel: #23482f;
+  --text-muted: #92c9a4;
+  --blue-color: #60a5fa;
+  --orange-color: #fb923c;
+  --purple-color: #a855f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Manrope", sans-serif;
+}
+body {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+input {
+  outline: 0;
+}
